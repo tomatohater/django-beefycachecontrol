@@ -9,7 +9,7 @@ README = read('README.rst')
 
 setup(
     name = "django-beefycachecontrol",
-    version = urlcrypt.__version__,
+    version = beefycachecontrol.__version__,
     description = 'Beefier Cache-Control HTTP headers created by @never_cache decorator in Django.',
     long_description = README,
     url = 'http://github.com/tomatohater/django-beefycachecontrol',
