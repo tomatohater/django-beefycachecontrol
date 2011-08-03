@@ -1,7 +1,7 @@
 django-beefycachecontrol
 ========================
 
-django-beefycachecontrol is a Django middleware that beefs up the Cache-Control HTTP headers as created by @never_cache decorator.
+django-beefycachecontrol is a Django middleware that smacks misbehaving upstream caches into submission with beefier anti-cache HTTP headers.
 
 Normally, when a view is decorated with @never_cache::
 
@@ -9,7 +9,7 @@ Normally, when a view is decorated with @never_cache::
     def my_view(request):
         ...
 
-The resulting HTTP headers (among other things) includes::
+The resulting HTTP headers (among other things) include::
 
     Cache-Control	max-age=0
 
