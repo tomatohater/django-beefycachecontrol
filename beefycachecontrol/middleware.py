@@ -8,8 +8,5 @@ class BeefyCacheControlMiddleware(object):
     def process_response(self, request, response):
         if (response.has_header('Cache-Control') and
             'max-age=0' in str(response['Cache-Control'])):
-            if 'no-cache' not in str(response['Cache-Control']):
-                patch_cache_control(response, no_cache=True)
-            if 'no-store' not in str(response['Cache-Control']):
-                patch_cache_control(response, no_store=True)
+            patch_cache_control(response, no_cache=True, no_store=True)
         return response
