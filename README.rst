@@ -35,10 +35,3 @@ Installation
 Usage
 ******
 django-beefycachecontrol is a middleware. Once it is enabled, there is nothing more to do. It simply fixes up your no-cache related HTTP headers.
-
-
-Credits
-********
-`Drew Engelson`_
-
-.. _`Drew Engelson`: http://github.com/tomatohater
